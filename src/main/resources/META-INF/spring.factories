@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.alexivchenko.spring.uaa.client.JwtKeyUriBasedResourceServerConfiguration,\
+  com.github.alexivchenko.spring.uaa.client.FeignOAuth2ClientProvider
