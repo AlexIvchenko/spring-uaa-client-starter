@@ -1,0 +1,1 @@
+# spring-uaa-client-starter
