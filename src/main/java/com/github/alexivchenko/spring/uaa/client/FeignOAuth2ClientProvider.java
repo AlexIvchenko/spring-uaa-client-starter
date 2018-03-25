@@ -1,9 +1,9 @@
 package com.github.alexivchenko.spring.uaa.client;
 
-import feign.Feign;
 import feign.RequestInterceptor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.feign.FeignAutoConfiguration;
 import org.springframework.cloud.security.oauth2.client.feign.OAuth2FeignRequestInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @Configuration
 @EnableOAuth2Client
 @EnableFeignClients
-@ConditionalOnClass(Feign.class)
+@ConditionalOnClass(FeignAutoConfiguration.class)
 public class FeignOAuth2ClientProvider {
     private final UaaClientProperties properties;
 
